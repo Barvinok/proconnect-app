@@ -15,7 +15,6 @@ const mockJobs = [
   },
 ];
 
-
 const mockProfiles = [
   {
     id: 1,
