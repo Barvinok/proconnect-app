@@ -21,14 +21,34 @@ const mockProfiles = [
     name: "Alice Johnson",
     title: "Full Stack Developer",
     bio: "Passionate about building scalable web apps.",
+    linkedin: "https://www.linkedin.com/in/alice-johnson-dev",
   },
   {
     id: 2,
     name: "Bob Lee",
     title: "Product Manager",
     bio: "Specializes in agile and cross-functional teams.",
+    linkedin: "https://www.linkedin.com/in/bob-lee-pm",
   },
 ];
+
+<a
+  href={profile.linkedin}
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-block",
+    marginTop: "12px",
+    padding: "8px 12px",
+    backgroundColor: "#FF6B00",
+    color: "#fff",
+    textDecoration: "none",
+    borderRadius: "4px",
+    fontSize: "14px",
+  }}
+>
+  View LinkedIn
+</a>
 
 export default function NetworkingJobApp() {
   const [search, setSearch] = useState("");
