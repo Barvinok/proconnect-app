@@ -32,24 +32,6 @@ const mockProfiles = [
   },
 ];
 
-<a
-  href={profile.linkedin}
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{
-    display: "inline-block",
-    marginTop: "12px",
-    padding: "8px 12px",
-    backgroundColor: "#FF6B00",
-    color: "#fff",
-    textDecoration: "none",
-    borderRadius: "4px",
-    fontSize: "14px",
-  }}
->
-  View LinkedIn
-</a>
-
 export default function NetworkingJobApp() {
   const [search, setSearch] = useState("");
 
@@ -68,7 +50,7 @@ export default function NetworkingJobApp() {
           fontSize: "32px",
           fontWeight: "bold",
           textAlign: "center",
-          color: "#FF6B00", // orange
+          color: "#FF6B00",
         }}
       >
         ProConnect
@@ -84,7 +66,7 @@ export default function NetworkingJobApp() {
           width: "100%",
           margin: "20px 0",
           fontSize: "16px",
-          border: "2px solid #FFA94D", // orange border
+          border: "2px solid #FFA94D",
           borderRadius: "6px",
         }}
       />
@@ -99,7 +81,7 @@ export default function NetworkingJobApp() {
             <div
               key={job.id}
               style={{
-                border: "1px solid #FFA94D", // light orange
+                border: "1px solid #FFA94D",
                 borderRadius: "8px",
                 padding: "16px",
                 marginBottom: "16px",
@@ -138,6 +120,23 @@ export default function NetworkingJobApp() {
               </h3>
               <p style={{ color: "#555", fontSize: "14px" }}>{profile.title}</p>
               <p style={{ marginTop: "8px", fontSize: "14px" }}>{profile.bio}</p>
+              <a
+                href={profile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{
+                  display: "inline-block",
+                  marginTop: "12px",
+                  padding: "8px 12px",
+                  backgroundColor: "#FF6B00",
+                  color: "#fff",
+                  textDecoration: "none",
+                  borderRadius: "4px",
+                  fontSize: "14px",
+                }}
+              >
+                View LinkedIn
+              </a>
             </div>
           ))}
         </div>
